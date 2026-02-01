@@ -53,10 +53,8 @@ dependencies {
     })
     testImplementation 'junit:junit:' + junitVersion
 
-    // Use JAR for non-F-Droid builds, source for F-Droid builds
-    stbetaImplementation fileTree(dir: 'libs', include: ['*.jar'])
-    ststableImplementation fileTree(dir: 'libs', include: ['*.jar'])
-    // stfdroid uses StreamUtils.java source in src/main/java/edu/mit/mobile/android/utils/
+    // Removed melautils.jar - only StreamUtils was used, now provided as source
+    // See: src/main/java/edu/mit/mobile/android/utils/StreamUtils.java
 
     implementation project(path: ':sharedutils')
 
