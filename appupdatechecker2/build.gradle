@@ -53,7 +53,8 @@ dependencies {
     })
     testImplementation 'junit:junit:' + junitVersion
 
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // Removed melautils.jar - only StreamUtils was used, now provided as source
+    // See: src/main/java/edu/mit/mobile/android/utils/StreamUtils.java
 
     implementation project(path: ':sharedutils')
 
