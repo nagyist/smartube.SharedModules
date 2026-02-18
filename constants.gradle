@@ -19,7 +19,7 @@ project.ext {
     // - No popup notifications
     // - Backup/restore can access to the external directory
     // - Disabled auto start of the background service (e.g. remote control service)
-    targetSdkVersion = 26
+    targetSdkVersion = 29 // 35 max
     compileSdkVersion = 33
     buildToolsVersion = '30.0.3'
     //gradleVersion = '6.9.1' // https://developer.android.com/studio/releases/gradle-plugin#updating-gradle
