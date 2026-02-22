@@ -15,7 +15,7 @@ public class SharedPreferencesBase {
     private static final String TAG = SharedPreferencesBase.class.getSimpleName();
     private static final long PREF_MAX_SIZE_MB = 5;
     private final SharedPreferences mPrefs;
-    protected WeakReference<Context> mContext = new WeakReference<>(null);
+    private Context mContext;
 
     public SharedPreferencesBase(Context context, String prefName) {
         this(context, prefName, -1, false);
@@ -79,12 +79,12 @@ public class SharedPreferencesBase {
 
     @Nullable
     public Context getContext() {
-        return mContext.get();
+        return mContext;
     }
 
     private void setContext(Context context) {
         if (context != null) {
-            mContext = new WeakReference<>(context);
+            mContext = context.getApplicationContext();
         }
     }
 

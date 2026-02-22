@@ -40,6 +40,7 @@ import android.view.WindowManager.LayoutParams;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.inputmethod.InputMethodManager;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.google.gson.Gson;
@@ -1305,14 +1306,17 @@ public final class Helpers {
         return parseFloat(arr[index], defaultValue);
     }
 
+    @NonNull
     public static List<Integer> parseIntList(String[] arr, int index) {
         return parseList(arr, index, Helpers::parseInt);
     }
 
+    @NonNull
     public static List<Long> parseLongList(String[] arr, int index) {
         return parseList(arr, index, Helpers::parseLong);
     }
 
+    @NonNull
     public static List<String> parseStrList(String[] arr, int index) {
         return parseList(arr, index, Helpers::parseStr);
     }
@@ -1342,14 +1346,17 @@ public final class Helpers {
         return result;
     }
 
+    @NonNull
     public static <T> List<T> parseList(String[] arr, int index, Parser<T> itemParser) {
         return parseList(ARRAY_DELIM, parseStr(arr, index), itemParser);
     }
 
+    @NonNull
     public static <T, K> Map<T, K> parseMap(String[] arr, int index, Parser<T> keyParser, Parser<K> valueParser) {
         return parseMap(parseStr(arr, index), keyParser, valueParser);
     }
 
+    @NonNull
     public static <T, K> Map<T, K> parseMap(String spec, Parser<T> keyParser, Parser<K> valueParser) {
         Map<T, K> result = new HashMap<>();
 
