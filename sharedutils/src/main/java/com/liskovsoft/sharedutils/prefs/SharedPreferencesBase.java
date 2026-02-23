@@ -9,7 +9,6 @@ import androidx.preference.PreferenceManager;
 import com.liskovsoft.sharedutils.mylogger.Log;
 
 import java.io.File;
-import java.lang.ref.WeakReference;
 
 public class SharedPreferencesBase {
     private static final String TAG = SharedPreferencesBase.class.getSimpleName();
