@@ -20,7 +20,7 @@ project.ext {
     // - Backup/restore can access to the external directory
     // - Disabled auto start of the background service (e.g. remote control service)
     targetSdkVersion = 29 // 35 max
-    compileSdkVersion = 33
+    compileSdkVersion = 34
     buildToolsVersion = '30.0.3'
     //gradleVersion = '6.9.1' // https://developer.android.com/studio/releases/gradle-plugin#updating-gradle
     //androidGradleVersion = '4.0.0+' // last version compatible with IntellJ 2020.3
@@ -62,8 +62,8 @@ project.ext {
     amazonExoplayerJitpackVersion = 'amazon~r2.12.1-SNAPSHOT'
     // playServicesCronetVersion = '18.0.1'
     // cronetApiVersion = '119.6045.31' // for testing
-    // cronetApiVersion = '105.5195.68' // latest version with Android 7.0 support
-    cronetApiVersion = '98.4758.101' // fast too
+    cronetApiVersion = '105.5195.68' // latest version with Android 7.0 support
+    // cronetApiVersion = '98.4758.101' // fast too
     // cronetApiVersion = '75.3770.101' // the fastest one (best choice)
     cronetOkHttpVersion = '0.1.0'
     
