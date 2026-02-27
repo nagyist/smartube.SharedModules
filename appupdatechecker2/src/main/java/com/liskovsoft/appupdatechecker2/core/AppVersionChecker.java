@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
-import edu.mit.mobile.android.utils.StreamUtils;
+import com.liskovsoft.appupdatechecker2.utils.StreamUtils;
 
 /**
  * A fairly simple non-Market app update checker. Give it a URL pointing to a JSON file

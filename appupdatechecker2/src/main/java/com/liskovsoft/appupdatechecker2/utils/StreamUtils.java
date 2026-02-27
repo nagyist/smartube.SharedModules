@@ -1,4 +1,4 @@
-package edu.mit.mobile.android.utils;
+package com.liskovsoft.appupdatechecker2.utils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
