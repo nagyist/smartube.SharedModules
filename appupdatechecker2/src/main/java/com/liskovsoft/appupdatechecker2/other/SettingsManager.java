@@ -3,7 +3,6 @@ package com.liskovsoft.appupdatechecker2.other;
 import android.content.Context;
 import android.content.SharedPreferences;
 import com.liskovsoft.sharedutils.mylogger.Log;
-import edu.mit.mobile.android.appupdater.R;
 
 public class SettingsManager {
     public static final long CHECK_INTERVAL_DEFAULT_MS = 60 * 1_000;
